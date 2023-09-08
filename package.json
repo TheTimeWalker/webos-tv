@@ -15,7 +15,8 @@
     "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
     "posttest": "codecov",
     "generate-docs": "typedoc",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "prepare": "npm run build"
   },
   "files": [
     "lib"
