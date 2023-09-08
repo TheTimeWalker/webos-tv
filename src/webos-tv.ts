@@ -55,7 +55,7 @@ export class TV {
     return wake(mac, { address, port: Number(port), password });
   }
 
-  private readonly connection: WebSocket;
+  public readonly connection: WebSocket;
   private config: Model.Config;
   private readonly connectionOpened: Promise<WebSocket.Event>;
 

@@ -56,10 +56,17 @@ const browserConfig = {
 
 const nodeConfig = {
   input,
-  output: {
-    file: pkg.main,
-    format: 'es',
-  },
+  output: [
+    {
+      file: pkg.cjs,
+      format: 'es',
+    },
+    {
+      file: pkg.main,
+      format: 'cjs',
+      sourcemap: true,
+    },
+  ],
   plugins: [
     externals(),
     typescript({ tsconfig: './tsconfig.json', noEmitOnError: true }),

@@ -5,8 +5,8 @@
   "main": "lib/webos-tv.js",
   "module": "lib/webos-tv.esm.js",
   "browser": "lib/webos-tv.iife.js",
+  "cjs": "lib/webos-tv.cjs",
   "types": "lib/webos-tv.d.ts",
-  "type": "module",
   "scripts": {
     "start": "rollup -w -c rollup.config.ts --configPlugin typescript",
     "build": "rollup -c rollup.config.ts --configPlugin typescript",
